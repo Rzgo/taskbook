@@ -1,0 +1,55 @@
+.board {
+  width: 250px;
+  min-height: 500px;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+
+  &__title {
+    padding: 0 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 10px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &-container {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &_editingMode {
+    border: 1px solid red;
+    cursor: grab;
+  }
+  &__wrapper {
+    padding: 10px 0;
+    border-top: 1px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  &__trash-icon {
+    width: 40px;
+    height: 40px;
+    margin: -5px 0 0 0 !important;
+  }
+  &__input {
+    width: 180px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid red;
+  }
+}

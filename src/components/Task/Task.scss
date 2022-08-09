@@ -1,0 +1,35 @@
+.task {
+  width: 240px;
+  min-height: 70px;
+  padding: 10px;
+  border: 1px solid #c2c2c2;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: grab;
+  &__title {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: wrap;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 35px;
+    height: 35px;
+    margin: -5px -5px 0 0 !important;
+  }
+  &__description {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: wrap;
+  }
+}

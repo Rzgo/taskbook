@@ -1,0 +1,67 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  background: rgba(71, 67, 66, 0.8);
+  backdrop-filter: blur(1px);
+  top: 0;
+  left: 0;
+  &__body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+  }
+  &__content {
+    width: 584px;
+    min-height: 250px;
+    background: #ffff;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__close-icon {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 25px;
+    border: none;
+    background: none;
+    margin-bottom: 30px;
+  }
+  &__input {
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+  &__textarea {
+    min-height: 150px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    background: #f0f0f0;
+    border: 0;
+    outline: none;
+    resize: none;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__buttons-wrapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}

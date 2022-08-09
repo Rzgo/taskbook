@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+
+  &__button {
+    width: 220px;
+  }
+  &__wrapper {
+    padding-left: 20px;
+    border-left: 1px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+}
